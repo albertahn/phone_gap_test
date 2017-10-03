@@ -27,6 +27,30 @@ var app = {
     // Bind any cordova events here. Common events are:
     // 'pause', 'resume', etc.
     onDeviceReady: function() {
+        window.FirebasePlugin.grantPermission();
+
+        FCMPlugin.getToken(function(token){
+            //alert(token);
+
+            navigator.notification.alert(
+                token+'You are the winner!',  // message
+                        alertDismissed,         // callback
+                        'Game Over',            // title
+                        'Done'                  // buttonName
+                    );
+        });
+
+        navigator.notification.alert(
+            'You are the winner!',  // message
+            alertDismissed,         // callback
+            'Game Over',            // title
+            'Done'                  // buttonName
+        );
+
+        // alert dialog dismissed
+        function alertDismissed() {
+            // do something
+        }
         this.receivedEvent('deviceready');
     },
 
@@ -42,5 +66,6 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
+
 
 app.initialize();

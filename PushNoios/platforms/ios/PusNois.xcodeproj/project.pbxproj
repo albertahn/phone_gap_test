@@ -27,6 +27,9 @@
 		07B87E0DC43D4A9C894D2118 /* FirebaseMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2805A387C144A17B4513C2F /* FirebaseMessaging.framework */; };
 		8E77D988679949B89773DD24 /* FirebaseCrash.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1410CBFDAC974CEC9008EB83 /* FirebaseCrash.framework */; };
 		1D446CF6C276454F8B12B4E4 /* FirebaseRemoteConfig.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F1837B8B2D54A699525CE6D /* FirebaseRemoteConfig.framework */; };
+		29871FCA762C4F2EB9D62CD3 /* CDVNotification.m in Sources */ = {isa = PBXBuildFile; fileRef = 198944EB11F9413E9BB78CB8 /* CDVNotification.m */; };
+		220B8D08B8DA44B28CB8C44B /* CDVNotification.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 56ECD68989C34703B8CA7C2C /* CDVNotification.bundle */; };
+		E7C9D27B04304D4CBD9918F3 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 061398B8600D433DB51FA38E /* AudioToolbox.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +84,10 @@
 		B2805A387C144A17B4513C2F /* FirebaseMessaging.framework */ = {isa = PBXFileReference; name = "FirebaseMessaging.framework"; path = "PusNois/Plugins/cordova-plugin-firebase/FirebaseMessaging.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		1410CBFDAC974CEC9008EB83 /* FirebaseCrash.framework */ = {isa = PBXFileReference; name = "FirebaseCrash.framework"; path = "PusNois/Plugins/cordova-plugin-firebase/FirebaseCrash.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 		7F1837B8B2D54A699525CE6D /* FirebaseRemoteConfig.framework */ = {isa = PBXFileReference; name = "FirebaseRemoteConfig.framework"; path = "PusNois/Plugins/cordova-plugin-firebase/FirebaseRemoteConfig.framework"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
+		198944EB11F9413E9BB78CB8 /* CDVNotification.m */ = {isa = PBXFileReference; name = "CDVNotification.m"; path = "cordova-plugin-dialogs/CDVNotification.m"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; explicitFileType = undefined; includeInIndex = 0; };
+		E691B3349E2D4A7DBB9F7CA9 /* CDVNotification.h */ = {isa = PBXFileReference; name = "CDVNotification.h"; path = "cordova-plugin-dialogs/CDVNotification.h"; sourceTree = "<group>"; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; explicitFileType = undefined; includeInIndex = 0; };
+		56ECD68989C34703B8CA7C2C /* CDVNotification.bundle */ = {isa = PBXFileReference; name = "CDVNotification.bundle"; path = "CDVNotification.bundle"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = wrapper.plug-in; explicitFileType = undefined; includeInIndex = 0; };
+		061398B8600D433DB51FA38E /* AudioToolbox.framework */ = {isa = PBXFileReference; name = "AudioToolbox.framework"; path = "System/Library/Frameworks/AudioToolbox.framework"; sourceTree = SDKROOT; fileEncoding = undefined; lastKnownFileType = wrapper.framework; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +104,7 @@
 				07B87E0DC43D4A9C894D2118 /* FirebaseMessaging.framework in Frameworks */,
 				8E77D988679949B89773DD24 /* FirebaseCrash.framework in Frameworks */,
 				1D446CF6C276454F8B12B4E4 /* FirebaseRemoteConfig.framework in Frameworks */,
+				E7C9D27B04304D4CBD9918F3 /* AudioToolbox.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -160,6 +168,7 @@
 				8D1107310486CEB800E47090 /* PusNois-Info.plist */,
 				6AFF5BF81D6E424B00AB3073 /* CDVLaunchScreen.storyboard */,
 				1F47AB5FCA99463CACED09BD /* GoogleService-Info.plist */,
+				56ECD68989C34703B8CA7C2C /* CDVNotification.bundle */,
 			);
 			name = Resources;
 			path = "PusNois/Resources";
@@ -176,6 +185,7 @@
 				B2805A387C144A17B4513C2F /* FirebaseMessaging.framework */,
 				1410CBFDAC974CEC9008EB83 /* FirebaseCrash.framework */,
 				7F1837B8B2D54A699525CE6D /* FirebaseRemoteConfig.framework */,
+				061398B8600D433DB51FA38E /* AudioToolbox.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -206,6 +216,8 @@
 				BE6605CE96EB4A1DB99E33DB /* AppDelegate+FirebasePlugin.h */,
 				D1FB0D9187A7472FAD0817E0 /* FirebasePlugin.h */,
 				D882EF0B865A4808A201DC83 /* Firebase.h */,
+				198944EB11F9413E9BB78CB8 /* CDVNotification.m */,
+				E691B3349E2D4A7DBB9F7CA9 /* CDVNotification.h */,
 			);
 			name = Plugins;
 			path = "PusNois/Plugins";
@@ -288,6 +300,7 @@
 				0207DA581B56EA530066E2B4 /* Images.xcassets in Resources */,
 				6AFF5BF91D6E424B00AB3073 /* CDVLaunchScreen.storyboard in Resources */,
 				448A80279D7E42EA83FD753D /* GoogleService-Info.plist in Resources */,
+				220B8D08B8DA44B28CB8C44B /* CDVNotification.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,6 +334,7 @@
 				302D95F114D2391D003F00A1 /* MainViewController.m in Sources */,
 				F9BCBB821A0341A8BA365C97 /* AppDelegate+FirebasePlugin.m in Sources */,
 				1EDE17A4C8A04C8EA9C87105 /* FirebasePlugin.m in Sources */,
+				29871FCA762C4F2EB9D62CD3 /* CDVNotification.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
