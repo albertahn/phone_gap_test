@@ -11,6 +11,20 @@ vagrant/.vagrant
 coverage/
 .idea
 
+
+PushNoios/build
+PushNoios/.lock-wscript
+PushNoios/.DS_Store
+PushNoios/node_modules
+PushNoios/npm-debug.log
+PushNoios/out*.jpg
+PushNoios/out*.png
+PushNoios/examples/*.avi
+PushNoios/examples/tmp/*
+PushNoios/vagrant/.vagrant
+PushNoios/coverage/
+PushNoios/.idea
+
 # OSX
 #
 .DS_Store
@@ -45,9 +59,9 @@ local.properties
 
 # node.js
 #
-node_modules/
-npm-debug.log
-yarn-error.log
+PushNoios/node_modules/
+PushNoios/npm-debug.log
+PushNoios/yarn-error.log
 
 # BUCK
 buck-out/
