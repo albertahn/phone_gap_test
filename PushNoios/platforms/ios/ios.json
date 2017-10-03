@@ -38,10 +38,10 @@
         }
     },
     "installed_plugins": {
-        "cordova-plugin-whitelist": {
+        "cordova-plugin-firebase": {
             "PACKAGE_NAME": "com.push.albert"
         },
-        "cordova-plugin-firebase": {
+        "cordova-plugin-whitelist": {
             "PACKAGE_NAME": "com.push.albert"
         }
     },
@@ -57,7 +57,7 @@
         }
     ],
     "plugin_metadata": {
-        "cordova-plugin-whitelist": "1.3.2",
-        "cordova-plugin-firebase": "0.1.24"
+        "cordova-plugin-firebase": "0.1.24",
+        "cordova-plugin-whitelist": "1.3.2"
     }
 }
